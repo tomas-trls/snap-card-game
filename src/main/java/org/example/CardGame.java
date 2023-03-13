@@ -9,29 +9,30 @@ import static  org.example.CardGameUtils.*;
 
 public class CardGame {
     public static void main(String[] args) {
+        shuffleDeck();
+        System.out.println(getDeck());
     }
 
     private String name;
     private static final ArrayList<Card> deckOfCard = generateDeck();
 
-    static ArrayList<Card> getDeck(){
+    public static ArrayList<Card> getDeck(){
         return deckOfCard;
     }
 
-    static Card dealCard(){
-        return deckOfCard.get(0);
+    public static Card dealCard(int card){
+        return deckOfCard.get(card);
     }
 
-
-    static ArrayList<Card> sortDeckInNumberOrder() {
+    public static ArrayList<Card> sortDeckInNumberOrder() {
          return (ArrayList<Card>) deckOfCard.stream().sorted(Comparator.comparing(Card::getValue)).collect(Collectors.toList());
     }
 
-    static ArrayList<Card> sortDeckIntoSuits() {
+    public static ArrayList<Card> sortDeckIntoSuits() {
         return (ArrayList<Card>) deckOfCard.stream().sorted(Comparator.comparing((Card::getSuit))).collect(Collectors.toList());
     }
 
-    static void shuffleDeck() {
+    public static void shuffleDeck() {
         System.out.println("Shuffling....");
         Collections.shuffle(deckOfCard);
     }
