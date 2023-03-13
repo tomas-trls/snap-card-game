@@ -8,11 +8,6 @@ import java.util.stream.Collectors;
 import static  org.example.CardGameUtils.*;
 
 public class CardGame {
-    public static void main(String[] args) {
-        shuffleDeck();
-        System.out.println(getDeck());
-    }
-
     private String name;
     private static final ArrayList<Card> deckOfCard = generateDeck();
 
