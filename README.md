@@ -1,7 +1,6 @@
 # ♦ ♠ Snap Card Game ♥ ♣
 
-The Snap Card game is my second project in Java with the __Nology course__. The goal of this project was to demonstrate that I clearly understood the 
- 
+The Snap Card game is my second project in Java with the __Nology course__. The goal of this project was to demonstrate that I clearly understood the new concepts we learned in this week of work. Such as Abstract Classes, Interfaces, Enum, ArrayLists and Testing.
 
 ## ⚙️ Features
 
