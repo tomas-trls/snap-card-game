@@ -14,7 +14,7 @@ The Snap Card game is my second project in Java with the __Nology course__. The 
 
 <div align="center">
 
-  ![Demo of the project]()
+  ![Demo of the project](http://g.recordit.co/cios0RryqZ.gif)
 
 </div>
 
