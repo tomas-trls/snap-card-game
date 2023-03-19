@@ -3,11 +3,12 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.List;
 import java.util.stream.Collectors;
 
 import static  org.example.CardGameUtils.*;
 
-public class CardGame {
+public abstract class  CardGame {
     private String name;
     private static final ArrayList<Card> deckOfCard = generateDeck();
 

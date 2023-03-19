@@ -3,12 +3,12 @@ package org.example;
 public class Card {
     private String suit;
     private String symbol;
-    private int value;
+    private final int value;
 
     public Card(String suit, String symbol) {
         this.suit = suit;
         this.symbol = symbol;
-        setValue(this.symbol);
+        this.value = setValue(this.symbol);
     }
 
     public String getSuit() {
@@ -31,27 +31,24 @@ public class Card {
         return value;
     }
 
-    public void setValue(String symbol) {
-        if(symbol == "J"){
-            this.value = 11;
-        } else if (symbol == "Q"){
-            this.value = 12;
-        } else if (symbol == "K"){
-            this.value = 13;
-        } else if (symbol == "A"){
-            this.value = 14;
-        } else {
-            this.value = Integer.parseInt(symbol);
+    public int setValue(String symbol) {
+        switch (symbol) {
+            case "J":
+                return 11;
+            case "Q":
+                return 12;
+            case "K":
+                return 13;
+            case "A":
+                return 14;
+            default:
+                return Integer.parseInt(symbol);
         }
     }
 
 
     @Override
     public String toString() {
-        return "Card{" +
-                "suit='" + suit + '\'' +
-                ", symbol='" + symbol + '\'' +
-                ", value=" + value +
-                '}';
+        return symbol+" of "+ suit;
     }
 }

@@ -3,11 +3,11 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class CardGameUtils {
+public abstract class CardGameUtils {
 
-    private static String[] suitsArr = {"♥","♦","♠","♣"};
+    private static final String[] suitsArr = {"♦️","♥️","♣️","♠️"};
 
-    private static String[] symbolArr = {"2","3","4","5","6","7","8","9","10","J","Q","K","A"};
+    private static final String[] symbolArr = {"2","3","4","5","6","7","8","9","10","J","Q","K","A"};
 
     public static ArrayList<Card> generateDeck() {
         ArrayList<Card> deck = new ArrayList<>();
